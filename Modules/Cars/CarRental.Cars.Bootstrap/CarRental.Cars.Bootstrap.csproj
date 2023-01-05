@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarRental.Cars.Api\CarRental.Cars.Api.csproj" />
+    <ProjectReference Include="..\CarRental.Cars.Application\CarRental.Cars.Application.csproj" />
+    <ProjectReference Include="..\CarRental.Cars.Consumers\CarRental.Cars.Consumers.csproj" />
+    <ProjectReference Include="..\CarRental.Cars.DataAccess.Adapters\CarRental.Cars.DataAccess.Adapters.csproj" />
+  </ItemGroup>
+
+</Project>

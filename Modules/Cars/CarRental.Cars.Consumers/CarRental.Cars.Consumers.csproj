@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="11.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Infrastructure\CarRental.IntegrationEvents\CarRental.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\CarRental.Cars.Application\CarRental.Cars.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MediatR.Extensions.Microsoft.DependencyInjection, Version=11.0.0.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2">
+      <HintPath>..\..\..\..\..\..\Users\Stefan T\.nuget\packages\mediatr.extensions.microsoft.dependencyinjection\11.0.0\lib\netstandard2.1\MediatR.Extensions.Microsoft.DependencyInjection.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
